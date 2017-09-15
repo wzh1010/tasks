@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.fa{
+	width: 768px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header{
+	height: 80px;
+	background:#29bde0 ;
+}
+.header img{
+	padding-top: 30px;
+	padding-left: 20px;
+}
+.content{
+	background:#f0f0f0 ;
+	padding-top: 30px;
+}
+
+.guesstext{
+	height: 110px;
+	background: #FFFFFF;
+	border: 1px solid #c9c9c9;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+.guesstext P{
+	font-size: 35PX;
+	color: #9a9a9a;
+	text-align: center;
+	line-height: 110px;
+}
+.guesstext img{
+	float: right;
+	margin-top: -73px;
+	margin-right: 20px;
+ }
+ .among{
+ 	border: 1px solid #c9c9c9;
+ 	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 30px;
+	background: #FFFFFF;
+ }
+.hold{
+	height: 80px;
+	font-size: 38px;
+	border-bottom: 2px solid #fbb435;
+	text-align: center;
+	line-height: 80px;
+	color: #fbb435;
+}
+.simplify{
+	height: 120px;
+	font-size: 32px;
+	color: #FFFFFF;
+	background: #69d1e9;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 120px;
+	letter-spacing: 5px;
+}
+.user{
+	font-size: 24px;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+}
+.word{
+	height: 120px;
+	font-size: 32px;
+	color: #FFFFFF;
+	background: #69d1e9;
+	margin: 30px 50px 0 50px;
+	/*margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;*/
+	text-align: center;
+	line-height: 120px;
+	letter-spacing: 5px;
+}
+.denote{
+	float: right;
+	margin-top: -90px;
+	margin-right: 10px;
+}
+
+.idiot{
+	height: 120px;
+	font-size: 32px;
+	color: #FFFFFF;
+	background: #69d1e9;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 30px;
+	text-align: center;
+	line-height: 120px;
+	letter-spacing: 5px;
+}
+
+.rump{
+	text-align: center;
+	margin-bottom: 10px;
+}
