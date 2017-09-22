@@ -123,6 +123,34 @@ body{
 	padding-right: 15px;
 }
 .rumpbox4{
-	font-size: 14px;
+	/*font-size: 14px;*/
 	padding-bottom: 20px;
+    text-align: center;
+}
+@media only screen and (max-width:768px ) {
+	.address{
+		width: 30%;
+		background: #FFFFFF;
+		border: 1px solid #ededed;
+		float: left;
+	}
+	.business2 .web{
+		width: 100%;
+		padding-left: 85px;
+		background-position: 65px;
+	}
+	.business2 li:hover{
+	background-position: 65px;
+    }
+	.potatobox{
+		width: 67%;
+		float: left;
+	}
+	.potato1 .text{
+		padding-top: 0;
+	}
+	.potato2{
+		padding-top: 0;
+	}
+	
 }
