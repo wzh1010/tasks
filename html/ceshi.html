@@ -5,47 +5,39 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<style type="text/css">
-			.box {
-				width: 300px;
-				height: 200px;
-				position: relative;
-				background: red;
-				cursor: pointer;
-			}
-			
-			.box .bmbox {
-				width: 300px;
-				height: 30px;
-				background: black;
-				position: absolute;
-				bottom: 0px;
-				left: 0px;
-				display: none;
-				font: 12px/30px "宋体";
-				color: white;
-				text-align: center;
-			}
-			
-			.box:hover .bmbox {
-				width: 300px;
-				height: 30px;
-				background: black;
-			    opacity:0.6;
-				position: absolute;
-				bottom: 0px;
-				left: 0px;
-				display: block;
-				font: 12px/30px "宋体";
-				color: white;
-				text-align: center;
-			}
-		</style>
+        .btn {
+            color: white;
+            background-color: #008aa6;
+            padding: 0px 1em;
+            height: 22px;
+            margin-left: 10px;
+            border: 0px solid black;
+            border-radius: 5px;
+        }
+
+
+        .btn:hover {
+            background-color: #ff0000;
+        }
+
+
+        /*active 要在后面 否则会被hover覆盖*/
+
+
+        .btn:focus {
+            background-color: #00ff00;
+        }
+
+
+        .btn:active {
+            background-color: #000000;
+        }
+    </style>
+
 	</head>
 
 	<body>
-		<div class="box">
-			<div class="bmbox">文字</div>
-		</div>
+		<button class="btn">hehhe</button>
 	</body>
 
 </html>
