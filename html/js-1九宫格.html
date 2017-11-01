@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="" />
+		<style type="text/css">
+			body {
+				width: 500px;
+				height: 500px;
+				background: white;
+				margin: auto;
+			}
+			
+			div {
+				width: 30%;
+				height: 30%;
+				margin-left: 2.5%;
+				margin-top: 2.5%;
+				background: orange;
+				float: left;
+				border-radius: 5px;
+			}
+			
+			input {
+				width: 475px;
+				height: 30px;
+				border: 1px solid orange;
+				background: white;
+				color: orange;
+				outline: none;
+				margin-left: 2.5%;
+				margin-top: 20px;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+			.change{
+				background: #FFA500;
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+
+		<input type="button" name="" id="start" value="开始闪"/>
+		<input type="button" name="" id="over" value="结束闪" />
+
+		<script type="text/javascript">
+			var timer;
+			var div=document.getElementsByTagName("div");
+			var colors=['#ffdab9','#afeeee','#98fb98','#1D7AD9','#26A26F','B92C28'];//颜色数组
+			 
+			 
+			function timer(){
+				//还原原始色
+				for(var i=0;i<9;i++){
+					div[i].style.background="#ffa600";
+				};
+				
+				var a=ner();
+				for(var m=0; m<3; m++){
+					div[a[m]].style.background=colors[m];
+				};
+			}
+			
+			function ner(){
+				//声明一个数组
+				var a=[];
+				//随机抽取三个数
+				var sum1=Math.floor(Math.random()*9);
+//				console.log(Math.random()*9)
+//				console.log(sum1)
+				var sum2=Math.floor(Math.random()*9);
+				var sum3=Math.floor(Math.random()*9);
+				//过滤随机抽取得三个数使其两两不重复
+				while(sum2==sum1){
+					sum2=Math.floor(Math.random()*9);
+				}
+				while(sum3==sum2||sum3==sum1){
+					sum3=Math.floor(Math.random()*9);
+				}
+				//把抽取得三个数放进数组里
+				a.push(sum1,sum2,sum3);
+				return a
+			}
+			
+			var times;
+			var btn1=document.getElementById('start');
+			var btn2=document.getElementById('over');
+			btn1.onclick=function(){
+				timer();
+				//清除时间
+				clearInterval(times);
+				//设置随机数时间
+				times=setInterval(timer,100);
+				btn2.className='';
+				btn1.className='change';
+			};
+			btn2.onclick=function(){
+				btn2.className='change';
+				btn1.className='';
+				//清除开始按钮的时间
+				clearInterval(times);
+				
+				setTimeout(function(){
+					btn2.className='';
+				},1000)
+				//还原原始色
+				for(var i=0;i<9;i++){
+					div[i].style.background="#ffa600";
+				};
+			};
+		</script>
+	</body>
+
+</html>

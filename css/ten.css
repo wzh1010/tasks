@@ -1,92 +1,110 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-.header{
+
+.header {
 	background: #1d7ad9;
 	height: 4rem;
 }
-.headerbox{
-	font-size:1.4rem ;
+
+.headerbox {
+	font-size: 1.4rem;
 	line-height: 4rem;
 	color: white;
 }
-.right{
+
+.right {
 	padding: 0 3rem;
 	height: 4rem;
 	font-size: 1.6rem;
 }
-.right:hover{
+
+.right:hover {
 	background: white;
 	padding: 1.2rem 3rem;
 	color: #000000;
 }
-.nav{
+
+.nav {
 	height: 10rem;
 	background: #f9f9f9;
 	padding-right: 17.5rem;
 }
 
-.button{
+.button {
 	font-size: 1.6rem;
 	padding: 1.2rem 1.5rem;
 	background: white;
-	border:none;
+	border: none;
 	outline: none;
 	margin-left: 6rem;
 	margin-top: 2.5rem;
 	border-radius: 0.5rem;
 }
-.button:hover{
+
+.button:hover {
 	background: #1d7ad9;
 	color: white;
 }
-.whenbox{
+
+.whenbox {
 	margin-top: 5rem;
 	margin-bottom: 3rem;
 }
-.whentext span{
+
+.whentext span {
 	font-size: 1.6rem;
 	padding-left: 4rem;
 	padding-right: 4rem;
 	color: #cccccc;
 }
-.whentext{
+
+.whentext {
 	margin-bottom: 5rem;
 }
-.whentext span:hover{
+
+.whentext span:hover {
 	color: #ff7f02;
 }
-.step{
+
+.step {
 	border: 1px solid #e7e7e7;
 }
-.title{
+
+.title {
 	font-size: 2.2rem;
 	border-left: 0.2rem solid #1d7ad9;
 	padding-left: 1rem;
 	margin-bottom: 2rem;
 }
-.step span{
+
+.step span {
 	font-size: 1.8rem;
 	padding-left: 1rem;
 }
-.step img{
+
+.step img {
 	padding-left: 2rem;
 }
-.step1{
+
+.step1 {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	background: #f4f4f4;
 }
-.select{
+
+.select {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
-.select .option{
+
+.select .option {
 	margin-left: 5rem;
 	margin-right: 2rem;
 }
-.all{
+
+.all {
 	background: url(../img/delta.png) no-repeat 97% center;
 	background-color: #fff;
 	-webkit-appearance: none;
@@ -97,33 +115,32 @@
 	width: 11.8rem;
 	height: 3.8rem;
 }
-/*.select input[type=radio]:checked + label{
-   background: #1d7ad9;
-}*/
-/*.select .option:active{
-	background: #1d7ad9;
-}*/
-.select .inp{
+
+.select .inp {
 	width: 7rem;
 	height: 3rem;
 }
-.select form{
+
+.select form {
 	float: left;
 	margin-left: 2.5rem;
 }
-.size{
+
+.size {
 	margin-left: 14rem;
 	margin-top: -2.5rem;
 	padding-bottom: 3rem;
 }
-.alltow{
+
+.alltow {
 	margin-top: -1rem;
 }
-.select2{
+
+.select2 {
 	border-bottom: 1px solid #e7e7e7;
-	
 }
-.step #naxt{
+
+.step #naxt {
 	width: 18rem;
 	height: 4rem;
 	background: #e15053;
@@ -134,41 +151,51 @@
 	margin-top: 15rem;
 	margin-bottom: 10rem;
 }
-.step form{
+
+.step form {
 	text-align: center;
 }
-.main{
+
+.main {
 	margin-bottom: 5rem;
 }
-.base{
+
+.base {
 	background: #f9f9f9;
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	color: #999999;
 }
 
-.date1{
+.date1 {
 	margin-left: 4rem;
 }
-.date2{
+
+.date2 {
 	font-size: 1.8rem;
 }
-.date3{
+
+.date3 {
 	margin-left: 0;
 }
-.base2{
+
+.base2 {
 	width: 23rem;
 }
-.date4{
+
+.date4 {
 	margin-left: 4.6rem;
 }
-.datebox1{
+
+.datebox1 {
 	margin-top: 2.5rem;
 }
-.date1:hover{
+
+.date1:hover {
 	color: #1d7ad9;
 }
-.foot{
+
+.foot {
 	background: #1d7ad9;
 	color: white;
 	font-size: 1.2rem;

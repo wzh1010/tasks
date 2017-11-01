@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>aaa</title>
+		<link rel="stylesheet" type="text/css" href="../css/九宫格.css" />
+	</head>
+
+	<body>
+		<div class="text">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+
+			<button id="start">开始闪</button>
+			<button id="over">结束闪</button>
+
+		</div>
+
+		<script type="text/javascript">
+			var boxs = document.getElementsByClassName('box');
+			var start = document.getElementById('start');
+			var over = document.getElementById('over');
+			var timer = null;
+			var randomNumOri = [];
+			for(var i = 0; i < boxs.length; i++) {
+				randomNumOri[i] = i;
+			}
+			start.onclick = function() {
+				var colors = ['purple', 'pink', 'gray'];
+				start.style.background = '#FFA500';
+				start.style.color = '#ffffff';
+				over.style.background = '#ffffff';
+				over.style.color = '#FFA500';
+				clearInterval(timer);
+				timer = setInterval(function() {
+					var randomNum = randomNumOri.sort(function() { return 0.5 - Math.random() });
+					for(var i = 0; i < boxs.length; i++) {
+						boxs[i].style.background = '#FFA500';
+					}
+					for(var j = 0; j < 3; j++) {
+						boxs[randomNum[j]].style.background = colors[j];
+					}
+				}, 500)
+			}
+			over.onclick = function() {
+				start.style.background = '#ffffff';
+				start.style.color = '#FFA500';
+				over.style.background = '#FFA500';
+				over.style.color = '#ffffff';
+				clearInterval(timer);
+				for(var i = 0; i < boxs.length; i++) {
+					boxs[i].style.background = '#FFA500';
+				}
+			}
+		</script>
+	</body>
+
+</html>
