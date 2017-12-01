@@ -97,25 +97,25 @@
 			}
 			
 			var times;
-			var btn1=document.getElementById('start');
-			var btn2=document.getElementById('over');
-			btn1.onclick=function(){
+			var start=document.getElementById('start');
+			var over=document.getElementById('over');
+			start.onclick=function(){
 				timer();
 				//清除时间
 				clearInterval(times);
 				//设置随机数时间
-				times=setInterval(timer,100);
-				btn2.className='';
-				btn1.className='change';
+				times=setInterval(timer,1000);
+				over.className='';
+				start.className='change';
 			};
-			btn2.onclick=function(){
-				btn2.className='change';
-				btn1.className='';
+			over.onclick=function(){
+				over.className='change';
+				start.className='';
 				//清除开始按钮的时间
 				clearInterval(times);
 				
 				setTimeout(function(){
-					btn2.className='';
+					over.className='';
 				},1000)
 				//还原原始色
 				for(var i=0;i<9;i++){

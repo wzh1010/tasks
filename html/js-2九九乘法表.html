@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>九九乘法表</title>
 		<style type="text/css">
-			table{
+			table {
 				width: 600px;
-				border-collapse:collapse;
+				border-collapse: collapse;
 			}
-			table th{
+			
+			table th {
 				border: 1px solid #000000;
 			}
 		</style>
 	</head>
+
 	<body>
-		
+
 		<script type="text/javascript">
 			document.write("<table>");
-//			var x,y;
-			for (var x=1;x<=9;x++) {
+			//			var x,y;
+			for(var x = 1; x <= 9; x++) {
 				document.write("<tr>");
-				for (var y=1;y<=x;y++) {
-					 document.write("<th>"+y+"*"+x+"="+y*x+"</th>");  
+				for(var y = 1; y <= x; y++) {
+					document.write("<th>" + y + "*" + x + "=" + y * x + "</th>");
 				}
-				document.write("</tr>");  
+				document.write("</tr>");
 			}
 			document.write("</table>");
+
 			
 		</script>
 	</body>
+
 </html>
