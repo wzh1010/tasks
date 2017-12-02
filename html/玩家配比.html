@@ -127,12 +127,13 @@
 			var killer = document.getElementById('killer');
 			var flat = document.getElementById('flat');
 			var sum = document.getElementById('sum');
-
+			
+			
+            
 			sum.onchange = function() {
 				//var value=this.value;
 				var value = sum.value;
-				if(value < 4) {
-					
+				if(value < 4) {					
 					alert("请输入正确的玩家数量");
 				} else if(value > 18) {
 					alert("请输入正确的玩家数量");
@@ -151,6 +152,7 @@
 				}
 			}
 
+			
 			var start = document.getElementById('start');
 			start.onclick = function() {
 				var arr = [];
