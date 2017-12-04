@@ -2,26 +2,27 @@
 	margin: 0;
 	padding: 0;
 }
+
 .fa{
-	width: 768px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+
 }
 .header{
-	height: 80px;
+	height: 100px;
 	background:#29bde0 ;
 }
 .header img{
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-left: 20px;
 }
 .content{
 	background:#f0f0f0 ;
-	padding-top: 30px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .guesstext{
-	height: 110px;
+	height: 130px;
 	background: #FFFFFF;
 	border: 1px solid #c9c9c9;
 	margin-left: 80px;
@@ -42,11 +43,15 @@
  	border: 1px solid #c9c9c9;
  	margin-left: 80px;
 	margin-right: 80px;
-	margin-top: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	background: #FFFFFF;
  }
 .hold{
-	height: 80px;
+	border: none;
+	background: white;
+	height: 100px;
+	width: 100%;
 	font-size: 38px;
 	border-bottom: 2px solid #fbb435;
 	text-align: center;
@@ -54,50 +59,61 @@
 	color: #fbb435;
 }
 .simple{
-	height: 120px;
+	border: none;
+	background: white;
+	width: 70%;
+	height: 140px;
 	font-size: 32px;
 	color: #FFFFFF;
 	background: #69d1e9;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 30px;
+	margin-left: 15%;
+	margin-top: 50px;
 	text-align: center;
 	line-height: 120px;
 	letter-spacing: 5px;
 }
 .user{
+	border: none;
+	background: white;
+	width: 70%;
 	font-size: 24px;
+	margin-left: 15%;
 	text-align: center;
-	height: 70px;
-	line-height: 70px;
+	height: 120px;
+	line-height: 120px;
 }
 .word{
-	height: 120px;
+	border: none;
+	background: white;
+	width: 70%;
+	height: 140px;
 	font-size: 32px;
 	color: #FFFFFF;
 	background: #69d1e9;
-	margin: 30px 50px 0 50px;
-	/*margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 30px;*/
+	margin: 0px 50px 0 50px;
+	margin-left: 15%;
 	text-align: center;
 	line-height: 120px;
 	letter-spacing: 5px;
 }
 .denote{
+	border: none;
+	background: white;
 	float: right;
-	margin-top: -90px;
+	margin-top: 60px;
 	margin-right: 10px;
 }
 
 .idiot{
-	height: 120px;
+	border: none;
+	background: white;
+	width: 70%;
+	height: 140px;
 	font-size: 32px;
 	color: #FFFFFF;
 	background: #69d1e9;
-	margin-left: 50px;
-	margin-right: 50px;
-	margin-top: 30px;
+	margin-left: 15%;
+	/*margin-top: 50px;*/
 	text-align: center;
 	line-height: 120px;
 	letter-spacing: 5px;
@@ -107,3 +123,21 @@
 	text-align: center;
 	margin-bottom: 10px;
 }
+.slide{
+	position: relative;
+}
+
+.slide .carousel-indicators li{
+		bottom:-20px;
+	background: #E3E3E3;
+}
+.slide .carousel-indicators .active{
+	background: orange;
+}
+@media only screen and (min-width: 768px)  {
+	.carousel-indicators{
+		bottom:-15px!important;
+	}
+}
+
+

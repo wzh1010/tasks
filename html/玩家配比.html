@@ -11,46 +11,47 @@
 			}
 			
 			.whole {
-				width: 768px;
-				height: 1028px;
-				margin-left: auto;
-				margin-right: auto;
+				width: 100%;
 				background: #F0F0F0;
+				padding-bottom: 50px;
 			}
 			
 			.header {
-				height: 60px;
+				height: 80px;
 				background: #29bde0;
 			}
 			
 			.header img {
-				margin-top: 10px;
+				margin-top: 20px;
 				padding-left: 30px;
+			}
+			.whole1{
+				width: 94%;
+				margin-left: auto;
+				margin-right: auto;
 			}
 			
 			.player {
-				height: 60px;
-				width: 748px;
-				margin-left: 10px;
-				margin-top: 5px;
-				box-shadow: 2px 5px 10px #8C8C8C;
+				height: 80px;
+				margin-top: 50px;
 				background: white;
-				line-height: 60px;
+				line-height: 80px;
 				text-align: center;
 				font-size: 32px;
 			}
 			
 			.allot {
-				width: 748px;
 				height: 400px;
-				margin-left: 10px;
-				margin-top: 5px;
-				box-shadow: 2px 5px 10px #8C8C8C;
+				margin-top: 40px;
 				background: white;
-				padding-top: 20px;
-				font-size: 20px;
+				padding-top: 50px;
+				font-size: 32px;
+				padding-left: 50px;
 			}
-			
+			.allot img{
+				width: 35px;
+				height: 35px;
+			}
 			.allot1 {
 				float: left;
 				padding-right: 300px;
@@ -59,34 +60,38 @@
 			
 			.blank {
 				height: 200px;
+				margin-top: 50px;
 				background: white;
-				width: 748px;
-				margin-left: 10px;
-				margin-top: 5px;
 			}
 			
 			.people {
 				height: 200px;
+				margin-top: 50px;
 				background: white;
-				width: 748px;
-				margin-left: 10px;
-				margin-top: 5px;
+				font-size: 32px;
+				padding-top: 50px;
+				padding-left: 50px;
 			}
 			
 			.people input {
 				width: 40px;
+				height: 35px;
 				border: none;
 				outline: none;
 				background: #F0F0F0;
 				color: orange;
 				font-weight: bold;
+				vertical-align: middle;
+				font-size: 32px;
 			}
-			
+			.scope{
+				font-size: 20px;
+				color: orange;
+			}
 			.deal input {
-				width: 748px;
-				height: 50px;
-				margin-left: 10px;
-				margin-top: 5px;
+				height: 60px;
+				width: 100%;
+				margin-top: 50px;
 				background: orange;
 				border: none;
 				outline: none;
@@ -94,6 +99,7 @@
 				cursor: pointer;
 				font-size: 20px;
 			}
+			
 		</style>
 	</head>
 
@@ -103,23 +109,30 @@
 			<div class="header">
 				<img src="../img/arrow.png" class="revert" />
 			</div>
+			<div class="whole1">
 			<div class="player">
 				玩家配比
 			</div>
 			<div class="allot">
 				<div class="allot1">
+					<img src="../img/werewolf-spirit.png"/>
 					杀手：<span id="killer"></span>人
 				</div>
 				<div>
+					<img src="../img/werewolf-people.png"/>
 					平民：<span id="flat"></span>人
 				</div>
 			</div>
 			<div class="blank"></div>
 			<div class="people">
-				请输入玩家数量<input type="number" name="sum" id="sum" value="" />玩家数量为4-18
+				请输入玩家数量<input type="number" name="sum" id="sum" value="" />
+				<span class="scope">
+				玩家数量为4-18
+				</span>
 			</div>
 			<div class="deal">
 				<input type="button" name="start " id="start" value="发牌" />
+			</div>
 			</div>
 
 		</div>
@@ -127,12 +140,11 @@
 			var killer = document.getElementById('killer');
 			var flat = document.getElementById('flat');
 			var sum = document.getElementById('sum');
-						
-            
+
 			sum.onchange = function() {
 				//var value=this.value;
 				var value = sum.value;
-				if(value < 4) {					
+				if(value < 4) {
 					alert("请输入正确的玩家数量");
 				} else if(value > 18) {
 					alert("请输入正确的玩家数量");
@@ -151,7 +163,6 @@
 				}
 			}
 
-			
 			var start = document.getElementById('start');
 			start.onclick = function() {
 				var arr = [];

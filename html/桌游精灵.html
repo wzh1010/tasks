@@ -5,36 +5,81 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="../css/桌游精灵.css" />
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 
 	<body>
 		<div class="fa">
-			<div class="header">；
+			<div class="header">
 				<img src="../img/file.png" />
 			</div>
 			<div class="content">
 				<div class="guess">
 					<div class="guesstext">
-					<p>上次游戏：捉鬼猜词版</p>
-					<img src="../img/Back-_-Icon.png" />
+						<p>上次游戏：捉鬼猜词版</p>
+						<img src="../img/Back-_-Icon.png" />
 					</div>
 				</div>
-				<div class="among">
-					<div class="hold">捉鬼游戏</div>
-					<div class="simple" >简化版</div>
-					<div class="user">有1133个用户正在玩此款游戏</div>
-					<div class="word">猜词版</div>
-					<div class="denote"><img src="../img/orange.png"></div>
-					<div class="user">有1133个用户正在玩此款游戏</div>
-					<div class="idiot">白痴版</div>
-					<div class="user">有1133个用户正在玩此款游戏</div>
-					<div class="rump"><img src="../img/circle.png"></div>
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="among">
+								<button class="hold">捉鬼游戏</button>
+								<button class="simple">简化版</button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+								<button class="word">猜词版</button>
+								<button class="denote"><img src="../img/orange.png"></button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+								<button class="idiot">白痴版</button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="among">
+								<button class="hold">捉鬼游戏</button>
+								<button class="simple">简化版</button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+								<button class="word">猜词版</button>
+								<button class="denote"><img src="../img/orange.png"></button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+								<button class="idiot">白痴版</button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="among">
+								<button class="hold">捉鬼游戏</button>
+								<button class="simple">简化版</button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+								<button class="word">猜词版</button>
+								<button class="denote"><img src="../img/orange.png"></button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+								<button class="idiot">白痴版</button>
+								<button class="user">有1133个用户正在玩此款游戏</button>
+							</div>
+						</div>
+					</div>
+
 				</div>
+
 			</div>
 		</div>
 		<script type="text/javascript">
 			document.getElementsByClassName('simple')[0].onclick = function() {
-				
+
+				window.location.href = "玩家配比.html";
+			}
+			document.getElementsByClassName('denote')[0].onclick = function() {
+
 				window.location.href = "玩家配比.html";
 			}
 		</script>
