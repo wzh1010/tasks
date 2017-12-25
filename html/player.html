@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.whole {
+				width: 100%;
+				background: #F0F0F0;
+				padding-bottom: 50px;
+			}
+			
+			.header {
+				height: 80px;
+				background: #29bde0;
+			}
+			
+			.header img {
+				margin-top: 20px;
+				padding-left: 30px;
+			}
+			.whole1{
+				width: 94%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+			.player {
+				height: 80px;
+				margin-top: 50px;
+				background: white;
+				line-height: 80px;
+				text-align: center;
+				font-size: 32px;
+			}
+			
+			.allot {
+				height: 400px;
+				margin-top: 40px;
+				background: white;
+				padding-top: 50px;
+				font-size: 32px;
+				padding-left: 50px;
+			}
+			.allot img{
+				width: 35px;
+				height: 35px;
+			}
+			.allot1 {
+				float: left;
+				padding-right: 300px;
+				padding-left: 20px;
+			}
+			
+			.blank {
+				height: 200px;
+				margin-top: 50px;
+				background: white;
+			}
+			
+			.people {
+				height: 200px;
+				margin-top: 50px;
+				background: white;
+				font-size: 32px;
+				padding-top: 50px;
+				padding-left: 50px;
+			}
+			
+			.people input {
+				width: 40px;
+				height: 35px;
+				border: none;
+				outline: none;
+				background: #F0F0F0;
+				color: orange;
+				font-weight: bold;
+				vertical-align: middle;
+				font-size: 32px;
+			}
+			.scope{
+				font-size: 20px;
+				color: orange;
+			}
+			.deal input {
+				height: 60px;
+				width: 100%;
+				margin-top: 50px;
+				background: orange;
+				border: none;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				font-size: 20px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+
+		<div class="whole">
+			<div class="header">
+				<img src="../img/arrow.png" class="revert" />
+			</div>
+			<div class="whole1">
+			<div class="player">
+				玩家配比
+			</div>
+			<div class="allot">
+				<div class="allot1">
+					<img src="../img/werewolf-spirit.png"/>
+					杀手：<span id="killer"></span>人
+				</div>
+				<div>
+					<img src="../img/werewolf-people.png"/>
+					平民：<span id="flat"></span>人
+				</div>
+			</div>
+			<div class="blank"></div>
+			<div class="people">
+				请输入玩家数量<input type="number" name="sum" id="sum" value="" />
+				<span class="scope">
+				玩家数量为4-18
+				</span>
+			</div>
+			<div class="deal">
+				<input type="button" name="start " id="start" value="发牌" />
+			</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="../js/player.js">
+			
+		</script>
+	</body>
+
+</html>

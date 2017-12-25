@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>testing</title>
+		<link rel="stylesheet" type="text/css" href="../css/testing.css" />
+	</head>
+	<img src="../img/alibaba.png" id="img" />
+
+	<input type="button" value="点击切换" id="but" />
+
+	<body>
+		<script type="text/javascript">
+			var but = document.getElementById('but');
+			var img = document.getElementById('img');
+
+			var fang = true;
+			but.onclick = function() {
+				fang = !fang;
+				if(fang) {
+					img.src = '../img/avatar.png';
+				} else {
+					img.src = '../img/alibaba.png';
+	
+				}
+			}
+		</script>
+	</body>
+
+</html>
