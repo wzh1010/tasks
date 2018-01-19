@@ -2,30 +2,38 @@
 <html>
 
 	<head>
-		<meta charset="UTF-8">
-		<title>testing</title>
-		<link rel="stylesheet" type="text/css" href="../css/testing.css" />
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.triangle_up {
+				border-color: transparent transparent #00f transparent;
+			}
+			
+			.triangle_down {
+				border-color: #f00 transparent transparent transparent;
+			}
+			
+			.triangle_left {
+				border-color: transparent #ff0 transparent transparent;
+			}
+			
+			.triangle_right {
+				border-color: transparent transparent transparent #008000;
+			}
+		</style>
 	</head>
-	<img src="../img/alibaba.png" id="img" />
-
-	<input type="button" value="点击切换" id="but" />
 
 	<body>
-		<script type="text/javascript">
-			var but = document.getElementById('but');
-			var img = document.getElementById('img');
 
-			var fang = true;
-			but.onclick = function() {
-				fang = !fang;
-				if(fang) {
-					img.src = '../img/avatar.png';
-				} else {
-					img.src = '../img/alibaba.png';
-	
-				}
-			}
-		</script>
+		<div class="triangle_up"></div>
+		<!--上三角-->
+		<div class="triangle_down"></div>
+		<!--下三角-->
+		<div class="triangle_left"></div>
+		<!--左三角-->
+		<div class="triangle_right"></div>
+		<!--右三角-->
+
 	</body>
 
 </html>
