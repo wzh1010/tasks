@@ -58,15 +58,6 @@ body .whole .data .iphone {
   left: 4.16vw;
   z-index: 2;
 }
-body .whole .data .code {
-  height: 13.88vw;
-  width: 100%;
-  font-size: 4.16vw;
-  color: #e1e5e7;
-  margin-top: 2vw;
-  padding-left: 16vw;
-  position: relative;
-}
 body .whole .data .locked {
   width: 4.16vw;
   height: 5.55vw;

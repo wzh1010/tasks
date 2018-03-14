@@ -70,7 +70,7 @@
 }
 .simple{
 	border: none;
-	background: white;
+	/*background: white;*/
 	width: 72.65vw;
 	height: 21.09vw;
 	font-size: 5.63vw;
@@ -94,7 +94,7 @@
 }
 .word{
 	border: none;
-	background: white;
+	/*background:white;*/
 	width:72.65vw;
 	height: 21.09vw;
 	font-size: 5.63vw;
@@ -116,7 +116,7 @@
 
 .idiot{
 	border: none;
-	background: white;
+	/*background: white;*/
 	width: 72.65vw;
 	height: 21.09vw;
 	font-size: 5.63vw;
