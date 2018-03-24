@@ -4,13 +4,6 @@
     <list default="true" id="51d07fe2-c2a9-4b3e-b6ae-79eea58760d0" name="默认的" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/radish/script/app.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/radish/script/js-5 entry.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/radish/script/route.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/radish/script/run.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/radish/style/js-5 entry.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/radish/view/js-06.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/radish/view/js-5 entry.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3877039">
+    <splitter split-orientation="horizontal" split-proportion="0.111041404">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
           <file leaf-file-name="testing.html" pinned="false" current-in-tab="true">
@@ -53,8 +46,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="736">
-                  <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+                <state relative-caret-position="345">
+                  <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -187,6 +180,17 @@
             <path>
               <item name="tasks" type="b2602c69:ProjectViewProjectNode" />
               <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="gittask" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+              <item name="gittask" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tasks" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -310,7 +314,7 @@
       <workItem from="1521594170707" duration="3304000" />
       <workItem from="1521680261970" duration="6441000" />
       <workItem from="1521767574158" duration="9895000" />
-      <workItem from="1521859235786" duration="886000" />
+      <workItem from="1521859235786" duration="1584000" />
     </task>
     <task id="LOCAL-00001" summary="ssss">
       <created>1514167069406</created>
@@ -344,7 +348,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628003000" />
+    <option name="totallyTimeSpent" value="628701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
@@ -413,11 +417,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/form.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/google.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -714,10 +713,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gittask/img/back.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+        <state relative-caret-position="345">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
           <folding />
         </state>
       </provider>
