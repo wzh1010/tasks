@@ -8,30 +8,16 @@
 	</head>
 
 	<body>
-	<form name="angularForm" novalidate method="post">
-		<table class="table table-bordered">
-			<tr>
-				<td>用户名</td>
-				<td>
-					<input type="number" required="required" ng-model="user.userName" name="userName" ng-minlength="6"/>
-					<!--angularForm.userName.$dirty检查是否是第一次输入！网上有很多种方法校验是否是第一次输入-->
-					<span class="warning" ng-show="angularForm.userName.$dirty && angularForm.userName.$error.required">*</span>
-					<span class="warning" ng-show="angularForm.userName.$error.number">只能输入数字</span>
-					<span class="warning" ng-show="angularForm.userName.$error.minlength">最少为6位数</span>
-				</td>
-			</tr>
-			<tr>
-				<td>密码</td>
-				<td>
-					<!--这里的id,一定要等于compare-pwd的值，因为指令里面是根据Id取值的-->
-					<input type="password" required="required" ng-minlength="6" name="pwd" ng-model="user.password" id="pwd"/>
-					<!--angularForm.pwd.$pristine首次输入，不太清楚的就自己运行，去掉条件一个一个的试！-->
-					<span class="warning" ng-show="!angularForm.pwd.$pristine && angularForm.pwd.$error.required">*</span>
-					<span class="warning" ng-show="angularForm.pwd.$error.minlength">最少为6位数</span>
-				</td>
-			</tr>
-		</table>
-	</form>
+	<div ng-class="{true:'selected',false:'unselected'}[isSelected]"></div>
+
+
+	<script>
+        function ctrl($scope) {
+            $scope.isSelected = true;
+        }
+
+	</script>
+
 	</body>
 
 </html>
